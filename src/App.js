@@ -13,6 +13,8 @@ import AirportShuttleIcon from "@material-ui/icons/AirportShuttle";
 import ApartmentIcon from "@material-ui/icons/Apartment";
 // Import View Components
 import MapView from "./views/MapBox";
+import RMapView from "./views/RMapBox";
+
 // import Container2 from "./container/Container2";
 
 export default function App() {
@@ -34,12 +36,12 @@ export default function App() {
             <Tab icon={<ApartmentIcon />} label="component 3" value={2} />
           </TabList>
           <TabPanel style={{ padding: 0, paddingTop: "0.5rem" }} value={0}>
-            <MapView />
+            <RMapView />
           </TabPanel>
           <TabPanel value={1}>
-            <div>tab 2</div>
+            <MapView/>
           </TabPanel>
-          <TabPanel value={2}>number 4</TabPanel>
+          <TabPanel value={2}>number 3</TabPanel>
         </TabContext>
       </Paper>
     </div>
